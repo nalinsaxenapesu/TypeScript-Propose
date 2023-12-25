@@ -53,7 +53,7 @@ const SingleTodo = ({todo,setToDoList,todoList}:Props) => {
   
 }
 {todo.isDone && showCuteImage && (
-        <img src={"https://c.tenor.com/b1-HqEo1cwUAAAAC/good-job-good.gif"} alt="Cute Image" style={{width:'50% ', borderRadius:'20px', margin:'20px'}} />
+        <img src={"https://i.pinimg.com/originals/05/f5/19/05f5196bc2aaab9705154ddb05d2ef79.gif"} alt="Cute Image" style={{width:'50% ', borderRadius:'20px', margin:'20px'}} />
       )}
 
 

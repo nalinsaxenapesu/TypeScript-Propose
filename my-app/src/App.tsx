@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import InputField from './components/InputField';
@@ -18,9 +18,18 @@ const App:React.FC=()=> {
      }}
 
 
+  // useEffect(() => {
+  //   const storedTodoList = localStorage.getItem('todoList');
+  //   if (storedTodoList) {
+  //     setToDoList(JSON.parse(storedTodoList));
+  //   }
+  // }, []);
+
+
+
   return (
     <div className="App">
-      <div className='heading'>🤓My babe's Todo List🤓</div>
+      <div className='heading'>🍔Mom's Shopping list 👜</div>
       <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd}></InputField>
       <TodoList todoList={todoList} setToDoList={setToDoList}></TodoList>
     </div>
